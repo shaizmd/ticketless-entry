@@ -141,7 +141,7 @@ export default function PDFDownloader({ booking }: PDFDownloaderProps) {
   return (
     <button 
       onClick={generatePDF}
-      className="w-full bg-gradient-to-r from-indigo-600 to-indigo-500 text-white px-6 py-3 rounded-xl text-sm font-medium hover:from-indigo-500 hover:to-indigo-400 transition-all duration-200 shadow-sm hover:shadow-md hover:scale-[1.01] active:scale-95 flex items-center justify-center space-x-2"
+      className="w-full bg-gradient-to-r from-indigo-600 to-indigo-500 text-white px-6 py-3 rounded-xl text-sm font-medium hover:from-indigo-500 hover:to-indigo-400 transition-all duration-200 shadow-sm hover:shadow-md hover:scale-[1.01] active:scale-95 flex items-center justify-center space-x-2 cursor-pointer"
     >
       <Download className="w-4 h-4" />
       <span>Download PDF Ticket</span>
