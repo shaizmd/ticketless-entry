@@ -72,7 +72,7 @@ export default async function MonumentDetailsPage({ params }: MonumentPageProps)
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
         {/* Hero Section */}
-        <div className="relative mb-6">
+        <div className="relative mb-4">
           <div className="relative h-[300px] rounded-2xl overflow-hidden shadow-lg border border-slate-200/60">
             <Image
               urlEndpoint={process.env.NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT}
@@ -88,7 +88,7 @@ export default async function MonumentDetailsPage({ params }: MonumentPageProps)
         </div>
 
         {/* Title and Basic Info */}
-        <div className="mb-6">
+        <div className="mb-4">
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-5 shadow-lg border border-slate-200/60">
             <h1 className="text-2xl sm:text-3xl font-light text-slate-800 mb-3 tracking-tight">
               {monument.name}

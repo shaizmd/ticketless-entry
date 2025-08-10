@@ -11,7 +11,7 @@ interface BookingFormProps {
 export default function BookingForm({ monumentId }: BookingFormProps) {
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedTime, setSelectedTime] = useState('');
-  const [numberOfPeople, setNumberOfPeople] = useState(2);
+  const [numberOfPeople, setNumberOfPeople] = useState(0);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -116,7 +116,7 @@ export default function BookingForm({ monumentId }: BookingFormProps) {
           <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm rounded-xl p-3 border border-slate-200/60">
             <button
               type="button"
-              onClick={() => setNumberOfPeople(Math.max(1, numberOfPeople - 1))}
+              onClick={() => setNumberOfPeople(Math.max(0, numberOfPeople - 1))}
               className="w-8 h-8 rounded-full bg-white border border-slate-300 flex items-center justify-center hover:border-orange-400 transition-colors duration-200 text-sm font-medium"
             >
               −
