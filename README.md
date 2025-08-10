@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ticketless Entry
+
+A modern, full-stack Next.js application for seamless, paperless monument ticket booking. Users can browse monuments, book tickets, receive QR code-based digital tickets, and manage their bookings—all with a crisp, compact UI and secure backend.
+
+---
+
+## 🚀 Features
+
+- **Browse Monuments:** View a curated list of monuments with images, ratings, and details.
+- **Instant Booking:** Multi-step booking form with date, time, guest count, and user details.
+- **Convenience Fee:** Transparent 5% fee calculation included in total price.
+- **Digital Tickets:** Secure QR code generated for each booking, scannable at entry.
+- **PDF Download:** Download your ticket as a PDF for offline access.
+- **My Bookings:** View all your bookings in one place, with quick access to QR codes.
+- **Admin Panel:** Add new monuments with images and details (admin only).
+- **Authentication:** Secure sign-in/sign-up with Clerk.
+- **Consistent UI:** Compact, light-weight, and mobile-friendly design using Tailwind CSS.
+
+---
+
+## 📝 Booking Flow
+
+1. **Browse:**
+   - Explore monuments on the home or monuments page.
+2. **Select & Book:**
+   - Choose a monument, pick a date, time, and number of guests.
+   - Enter your details and review the transparent pricing (including convenience fee).
+3. **Confirm:**
+   - Submit your booking. Receive a unique QR code and PDF ticket on the success page.
+4. **Access Bookings:**
+   - View all your bookings and tickets in the "My Bookings" section.
+5. **Entry:**
+   - Show your QR code at the monument for quick, paperless entry.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 15, React, Tailwind CSS
+- **Backend:** Next.js API routes, Prisma ORM, PostgreSQL
+- **Auth:** Clerk
+- **QR & PDF:** qrcode, jsPDF
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to use the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Project Structure
 
-## Learn More
+- `app/` — Main application pages and components
+- `app/monuments/` — Monument listing, details, and booking
+- `app/my-bookings/` — User's booking history
+- `app/admin/` — Admin panel for monument management
+- `prisma/` — Database schema and migrations
+- `lib/` — Prisma client setup
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
